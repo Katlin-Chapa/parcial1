@@ -11,7 +11,7 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#menu">Menú</a></li>
-                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#formulario">Formulario de Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +26,49 @@
         </section>
 
         <section id="formulario" style="background-color: lightsalmon">
-            <h1>Formulario</h1>
+            <h1>Formulario de Registro</h1>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <br><br>
+                
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+                <br><br>
+                
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <br><br>
+                
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <br><br>
+                
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <br><br>
+                
+                <label for="dia">Selecciona el día de la semana:</label>
+                <select id="dia" name="dia" required>
+                    <option value="lunes">Lunes</option>
+                    <option value="martes">Martes</option>
+                    <option value="miercoles">Miércoles</option>
+                    <option value="jueves">Jueves</option>
+                    <option value="viernes">Viernes</option>
+                    <option value="sabado">Sábado</option>
+                    <option value="domingo">Domingo</option>
+                </select>
+                <br><br>
+        
+                <button type="submit">Guardar</button>
+            </form>
         </section>
     </main>
     
